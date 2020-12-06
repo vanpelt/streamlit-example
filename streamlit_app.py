@@ -12,6 +12,7 @@ with st.echo(code_location="below"):
     query_params = st.experimental_get_query_params()
     path = query_params.get("path", "wandb/dogs/3a1k7v1o")
 
+    st.text(query_params)
     st.markdown("# Path\n`{}`".format(path))
     # TODO: waiting for a way to get secrets
     # api = wandb.Api()
